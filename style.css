@@ -1,0 +1,50 @@
+/*Corpo do site*/
+body{
+    background-color: rgba(1, 7, 2, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Interface central */
+.interface-central{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formulário */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(39, 39, 39, 0.9);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 215, 0, 0.7);
+    width: 300px;
+    padding: 20px;
+}
+
+/* Login*/
+#login{
+    color: rgb(255, 255, 255);
+}
+
+/* Inputs do formulário */
+input{
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(216, 199, 102, 0.7);
+    width: 100%;
+
+}
+
+/* Labels*/
+label{
+    text-align: center;
+    color: rgba(255, 215, 0, 0.7);
+    margin-bottom: 5px;
+}
+
+/* Botões do formulário */
