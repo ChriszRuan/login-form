@@ -37,6 +37,7 @@ input{
     border-radius: 5px;
     border: 2px solid rgba(216, 199, 102, 0.7);
     width: 100%;
+    margin-bottom: 10px;
 
 }
 
@@ -44,7 +45,77 @@ input{
 label{
     text-align: center;
     color: rgba(255, 215, 0, 0.7);
-    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 /* Botões do formulário */
+button {
+    flex: 1;
+    transition: 0.5s;
+}
+.botoes-container{
+    display: flex;
+    gap: 10px;
+    height: 50px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Entrar*/
+#login-button{
+    background-color: rgb(47, 126, 40);
+    color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 215, 0, 0.7);
+    border-radius: 10px 5px 25px 10px;
+}
+
+/* Criar Conta */
+#register-button{
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    border-radius: 25px 10px 10px 5px;
+     border: 2px solid rgba(47, 126, 40, 0.7);
+}
+
+/* Esqueci Senha*/
+#redefinir-senha{
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Efeitos Hover Botões*/
+#login-button:hover{
+    transform: scale(1.1);
+    background-color: rgba(48, 236, 31, 0.7);
+    color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 215, 0, 0.7);
+    box-shadow: 2px 2.5px 5px 5px rgba(255, 215, 0, 0.5);
+    animation: pulse 2s infinite;
+}
+
+#register-button:hover{
+    transform: scale(1.1);
+    background-color: rgba(122, 78, 45, 0.7);
+    color: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(47, 126, 40, 0.7);
+    box-shadow: 2px 2.5px 5px 5px rgba(47, 126, 40, 0.5);
+    animation: pulse 2s infinite;
+}
+
+#redefinir-senha:hover{
+    transform: scale(1.1);
+    color: rgba(255, 215, 0, 0.9);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
