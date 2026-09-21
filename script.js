@@ -2,6 +2,16 @@ let inputUsername = document.getElementById("username");
 let inputPassword = document.getElementById("password");
 let loginButton = document.getElementById("login-button");
 let forgotPasswordButton = document.getElementById("redefinir-senha");
+let modal = document.getElementById("modal-esqueci-senha");
+let closeButton = document.querySelector(".close");
+
+forgotPasswordButton.addEventListener("click", function() {
+    modal.classList.add("active");
+})
+
+closeButton.addEventListener("click", function() {
+    modal.classList.remove("active");
+});
 
 loginButton.addEventListener("click", function() {
     let username = inputUsername.value;
